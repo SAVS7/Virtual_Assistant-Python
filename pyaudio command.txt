@@ -1,0 +1,47 @@
+Linux Debian based :
+
+
+# Install dependencies
+sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
+sudo apt-get install ffmpeg
+sudo apt-get install python3-tk python3-dev
+
+
+# Install PyAudio
+pip install pyaudio
+
+
+
+Windows:
+
+# Check Python and pip
+python --version
+pip --version
+
+
+# Try installing directly
+pip install pyaudio
+
+
+# If it fails, download the wheel file from:
+# https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
+# Example (adjust filename to match your Python version):
+pip install PyAudio-0.2.11-cp310-cp310-win_amd64.whl
+
+
+MacOS:
+
+
+# Install Homebrew if not already installed
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
+# Install portaudio dependency
+brew install portaudio
+
+
+# Install PyAudio
+pip install pyaudio
+
+
+
